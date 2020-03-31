@@ -4,4 +4,5 @@ This repository contains step-by-step guides to be followed when deploying web a
 
 **Instructions for:**
 
-1.  [Heroku](/heroku)
+1. [Heroku](/heroku)
+2. [PythonAnywhere](/pythonanywhere)
