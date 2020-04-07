@@ -17,7 +17,7 @@ We will  use git to deploy apps to Heroku. So, your project should have initiali
 ```web: gunicorn project_name.wsgi``` (Don't forget to replace `project_name` with your own project folder name)
 
 8. Define `STATIC_ROOT` in `settings.py` to point to the directory where static files are to be saved. For instance, 
-```STATIC_ROOT = '/staticfiles/```
+```STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')```
 
 9. Run `python manage.py collectstatic` to collect static files to the designated directory and see if it works in your machine. If it fails in your machine, it will fail in Heroku too. So, try to find out the problem if it fails.
 
